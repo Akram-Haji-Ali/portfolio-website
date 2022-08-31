@@ -1,0 +1,249 @@
+:root {
+  --primary-color: #c2d3df;
+  --primary-text-color: #032d53;
+  --visited-link: #05676e;
+  --link-color: #053a32;
+  --active-link: #489c79;
+  --primary-button: #037704;
+  --prim-button-text: #FFFFFF;
+  --secondary-button: #e0b711;
+  --button-padding: 10px;
+  --sec-button-text: #eeeeee ;
+  --h-font-weight: 700;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Raleway', sans-serif;
+  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+  
+    color: var(--link-color);
+  }
+  
+  
+  a:hover {
+    
+    text-decoration: none;
+  }
+  a:visited {
+    
+    color: var(--visited-link)
+  }
+  
+  a:active {
+    
+    color: var(--active-link)
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: var(--h-font-weight)
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: var(--h-font-weight)
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: var(--h-font-weight)
+  }
+
+  .profile {
+    
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  }
+
+  .profile__portrait {
+    float: left;
+    width: 300px;
+    max-width: 400px;
+    height: 300px;
+    margin-right: 40PX;
+    border-radius: 50%;
+  }
+
+  .button, button {
+    
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+    background-color: var( --primary-button);
+    color: var(--prim-button-text);
+    text-decoration: none;
+    padding: var(button-padding);
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition-duration: 0.2s;
+    transition-property: opacity;
+  }
+  
+  button:hover,
+  button:focus,
+  .button:hover,
+  .button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+  }
+ 
+  
+  .button__secondary {
+    background-color: var(--secondary-button);
+    color: var(--sec-button-text);
+  }
+
+  .page-header {
+    display: flex;
+    width: 100%;
+    padding: auto ;
+  }
+  .page-header__item {
+    flex: 0 1 250px;
+  }
+
+  .page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  .navigation-list {
+    list-style-type: none;
+  }
+
+  .navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  main{
+    
+
+    margin-left: 20px;
+    margin-top: 40px;
+    
+    
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 250px 250px; 
+    gap: 15px;
+    margin: 10px;
+   
+    
+  
+  }
+
+  .grid__item {
+    background-color: rgb(134, 106, 106);
+    text-align: center;
+    
+    
+  }
+  .grid :hover{
+
+  background-color: rgb(180, 130, 120) ;
+  transition-delay: 0.2s;
+
+  }
+
+
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }  
+
+ 
+ @keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+    50% {
+      fill: #fcffad;
+    }
+    100% {
+      fill: #f76414;
+    }
+  }
+
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  
+
+  @keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+    to {
+      transform: translate(200px, 50px);
+    }
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
+    }
+    to {
+      transform: translate(100px, 48px);
+    }
+  }
+  
+.page-footer{
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
