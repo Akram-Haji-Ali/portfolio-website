@@ -14,6 +14,10 @@ body {
     line-height: 1.6;
 }
 
+.logo-page-header__item{
+  width:290px ;
+  height:80px;
+}
 a {
   
     color :#053a32; 
@@ -348,6 +352,7 @@ a {
   text-align: center;
 
 }
+
 
 
 @media all and (max-width: 500px) {
