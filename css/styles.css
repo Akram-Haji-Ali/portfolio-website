@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #c2d3df;
+  --primary-color: rgb(219, 215, 215);
   --primary-text-color: #032d53;
   --visited-link: #05676e;
   --link-color: #053a32;
@@ -85,7 +85,7 @@ a {
     background-color: var( --primary-button);
     color: var(--prim-button-text);
     text-decoration: none;
-    padding: var(button-padding);
+    padding: var(--button-padding);
     border-radius: 3px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     transition-duration: 0.2s;
@@ -130,6 +130,7 @@ a {
     display: inline-block;
     margin-left: 15px;
     margin-right: 15px;
+    
   }
 
   h1 {
@@ -166,6 +167,14 @@ a {
   background-color: rgb(180, 130, 120) ;
   transition-delay: 0.2s;
 
+  }
+
+  #about-picture{
+    
+    display: block;
+    padding: 15px;
+    margin: auto;
+    width: 50%;
   }
 
 
