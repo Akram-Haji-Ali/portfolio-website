@@ -6,18 +6,20 @@
 */
 
 :root {
-  --primary-color: rgb(219,215,215)
+  --primary-color: #fefefe
   --primary-text-color: #032d53;
-  --visited-link: #05676e;
-  --link-color: #053a32;
-  --active-link: #489c79;
-  --primary-button: #037704;
-  --prim-button-text: #FFFFFF;
-  --secondary-button: #e0b711;
-  --button-padding: 10px;
-  --sec-button-text: #eeeeee ;
-  --h-font-weight: 700;
+  --visited-link: #05676e
+  --link-color: #053a32
+  --active-link: #489c79
+  --primary-button: #037704
+  --prim-button-text: #FFFFFF
+  --secondary-button: #e0b711
+  --button-padding: 10px
+  --sec-button-text: #eeeeee
+  --h-font-weight: 700
 }
+
+
 
 body {
     background-color: var(--primary-color);
