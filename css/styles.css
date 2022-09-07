@@ -1,5 +1,9 @@
 :root {
+<<<<<<< Updated upstream
   --primary-color: rgb(219, 215, 215);
+=======
+  --primary-color: #fefeff;
+>>>>>>> Stashed changes
   --primary-text-color: #032d53;
   --visited-link: #05676e;
   --link-color: #053a32;

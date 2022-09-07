@@ -20,7 +20,11 @@
 }
 
 body {
+<<<<<<< Updated upstream
     background-color: var(--primary-color);
+=======
+    background-color: #fefeff;
+>>>>>>> Stashed changes
     font-family: 'Raleway', sans-serif;
   
     font-weight: 500;
