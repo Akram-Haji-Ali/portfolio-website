@@ -6,17 +6,21 @@
 */
 
 :root {
-  --primary-color: #fefefe
+  --primary-color: #fefefe;
   --primary-text-color: #032d53;
-  --visited-link: #05676e
-  --link-color: #053a32
-  --active-link: #489c79
-  --primary-button: #037704
-  --prim-button-text: #FFFFFF
-  --secondary-button: #e0b711
-  --button-padding: 10px
-  --sec-button-text: #eeeeee
-  --h-font-weight: 700
+  --visited-link: #05676e;
+  --link-color: #053a32;
+  --active-link: #489c79;
+  --primary-button: #037704;
+  --prim-button-text: #FFFFFF;
+  --secondaryButton: #1e90ff;
+  --blue: #1e90ff;
+
+
+
+  --button-padding: 10px;
+  --sec-button-text: #eeeeee;
+  --h-font-weight: 700;
 }
 
 
@@ -47,27 +51,27 @@ a {
   }
   a:visited {
     
-    color: var(--visited-link)
+    color: var(--visited-link);
   }
   
   a:active {
     
-    color: var(--active-link)
+    color: var(--active-link);
   }
 
   h1 {
     font-size: 30px;
-    font-weight: var(--h-font-weight)
+    font-weight: var(--h-font-weight);
   }
   
   h2 {
     font-size: 24px;
-    font-weight: var(--h-font-weight)
+    font-weight: var(--h-font-weight);
   }
   
   h3 {
     font-size: 18px;
-    font-weight: var(--h-font-weight)
+    font-weight: var(--h-font-weight);
   }
 
   .profile {
@@ -87,7 +91,7 @@ a {
   }
 
   .button, button {
-    
+  
     border: none;
     display: inline-block;
     font-family: inherit;
@@ -117,7 +121,7 @@ a {
  
   
   .button__secondary {
-    background-color: var(--secondary-button);
+    background-color: var(--secondaryButton);
     color: var(--sec-button-text);
   }
 
