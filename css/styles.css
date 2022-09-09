@@ -6,7 +6,7 @@
   --active-link: #489c79;
   --primary-button: #037704;
   --prim-button-text: #FFFFFF;
-  --secondary-button: #e0b711;
+  --secondaryButton: #e0b711;
   --button-padding: 10px;
   --sec-button-text: #eeeeee ;
   --h-font-weight: 700;
@@ -104,7 +104,7 @@ a {
  
   
   .button__secondary {
-    background-color: var(--secondary-button);
+    background-color: var(--secondaryButton);
     color: var(--sec-button-text);
   }
 
